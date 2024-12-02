@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+<section id="about">
+<div id="aboutblur">
+    <h1>About this Blog Page:</h1>
+    <p id="genmes">
+        Dear Blogger,<br>
+        It is a web page designed for you to write your thoughts 
+        and express your feelings freely and helping it reach<br> the right audience freeing you from the fear of any negative judgement
+        , giving you your deserved fame!
+
+        Happy time writing blogs...
+    </p>
+    <button id="secret">Click to reveal</button>
+    <div id="secmes">Message from the author:<br>Live your life and enjoy making sure not to miss out on the important things.</div>
+</div>
+<script>
+    document.getElementById("secret").onclick = function() {
+        myFunction()
+    };
+    function myFunction() {
+        document.getElementById("secmes").classList.toggle("opensecmes");
+    }
+</script>
+</section>
+<%- include("partials/footer.ejs") %>

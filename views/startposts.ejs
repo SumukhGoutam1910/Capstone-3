@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+<section id="posts">
+    <form action="/post" method="POST" class="content">
+        <div class="content-title">
+            <h2>Publish your blog now!</h2>
+            <hr>
+        </div>
+        <input type="text" name="name" placeholder="Author's Name" class="content-input" required>
+        <input type="email" name="email" placeholder="Your email" class="content-input" required>
+        <textarea name="message" placeholder="Blog-Area" class="content-input" required></textarea>
+        <button type="submit">Post</button>
+    </form>
+</section>
+<%- include("partials/footer.ejs") %>

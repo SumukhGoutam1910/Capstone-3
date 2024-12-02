@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+<section id="postingblog">
+    <div>
+        <%if(locals.c1){ %>
+            <h3><span class="cr">Author</span>: <%=c1%></h3>
+        <%}  %>
+        <%if(locals.c2){ %>
+            <h3><span class="cr">Email</span>: <%=c2%></h3>
+        <%}  %>
+        <%if(locals.c3){ %>
+            <p><span class="creative">Blog</span><span id="cr2">:</span> <%=c3%></p>
+        <%} else{%>
+            <h1 class="revise">Click on Start Posting to see content here!</h1>
+        <%} %>
+    </div>
+</section>
+<%- include("partials/footer.ejs") %>
